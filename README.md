@@ -3,18 +3,19 @@
 <h1><i>Description</i></h1>
 
 <h2>SkillConnect – Teacher Rating, Feedback, and Hiring Platform.</h2>
-<b>SkillConnect is a web-based project that helps students and educational institutions to find the best teachers based on ratings and feedbacks provided by students.<br>
-A platform where teachers create profiles showcasing their teaching experiences, receive ratings, feedbacks and overall performance feedback from students, and are hired by educational institutes based on their ratings. Designed and Developed a Responsive website.<br>
-<i>Technologies – HTML5, CSS3, JavaScript, Node.js, Express.js, EJS, MySQL, RESTful APIs. <br>
-Website Responsiveness is done by the Plain CSS.<br></i></b>
+<h3>SkillConnect is a web-based project that helps students and educational institutions to find the best teachers based on ratings and feedbacks provided by students.<br>
+A platform where teachers create profiles showcasing their teaching experiences, receive ratings, feedbacks and overall performance feedback from students, and are hired by educational institutes based on their ratings. Designed and Developed a Responsive website.
+<br>
+<br>
+Technologies – Node.js, Express.js, MySQL, RESTful APIs, MVC Design Pattern, JavaScript, EJS, CSS3, HTML5, Website Responsiveness is done by the Plain CSS.<br></h3>
 <br>
 
-<h1><i>STEPS TO USE PROJECT</i></h1>
+<h2>Installation</h3>
 
 1. Download all files and directory from the repo or Clone the repo by "git clone" command
 
 ```
-git clone <- Repo Link ->
+git clone https://github.com/OmkarArdekar12/SkillConnect.git
 ```
 
 <br>
@@ -33,7 +34,6 @@ npm install
 
 <br>
 
-
 3. Create MySQL Database according to the schema.sql or Run schema.sql file in MySQL CLI
 
 ```
@@ -41,20 +41,22 @@ mysql -u root -p
 ```
 
 ```
-source /database/schema.sql
+source ./database/schema.sql
 ```
 
 <br>
 
-
-4. Add 'DB_PASSWORD= #Your Database Password' with your MySQL database password in .env file
+4. Environment variables - Setup .env file
 
 ```
-password: <- Your MySQL DataBase Password ->
+PORT=8080
+HOST=localhost
+USER=root
+DATABASE_NAME=skillconnect
+DB_PASSWORD= #your-database-password
 ```
 
 <br>
-
 
 5. To start the server open termial and enter "nodemon app.js"
 
